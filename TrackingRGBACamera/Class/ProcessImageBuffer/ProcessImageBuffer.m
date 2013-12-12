@@ -17,6 +17,7 @@
     CVPixelBufferLockBaseAddress(imageBuffer, 0);
     size_t bufferHeight = CVPixelBufferGetHeight(imageBuffer);
     size_t bufferWidth = CVPixelBufferGetWidth(imageBuffer);
+    
     int scaledVideoPointX = round((view.bounds.size.width - currentTouchPoint.x) * (CGFloat)bufferHeight / view.bounds.size.width);
     int scaledVideoPointY = round(currentTouchPoint.y * (CGFloat)bufferWidth / view.bounds.size.height);
     uint8_t *rowBase = (uint8_t *)CVPixelBufferGetBaseAddress(imageBuffer);

@@ -21,13 +21,13 @@
 		9ACDC8011858970A0007F960 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9ACDC7FF1858970A0007F960 /* InfoPlist.strings */; };
 		9ACDC8041858970A0007F960 /* TrackingRGBACameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACDC8031858970A0007F960 /* TrackingRGBACameraTests.m */; };
 		9ACDC811185897740007F960 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACDC80F185897740007F960 /* AppDelegate.m */; };
-		9ACDC814185897A80007F960 /* TrackingRGBACamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACDC813185897A80007F960 /* TrackingRGBACamera.m */; };
 		9ACDC816185897CF0007F960 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACDC815185897CF0007F960 /* CoreMedia.framework */; };
 		9ACDC818185897D70007F960 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACDC817185897D70007F960 /* AVFoundation.framework */; };
 		9ACDC81A1858980C0007F960 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACDC8191858980B0007F960 /* CoreVideo.framework */; };
 		9ACDC81C1858983F0007F960 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACDC81B1858983F0007F960 /* QuartzCore.framework */; };
-		9ACDC81F1858AC730007F960 /* TrackingRGBACameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACDC81E1858AC730007F960 /* TrackingRGBACameraViewController.m */; };
-		DD5AEDA2185993A9008C463C /* ProcessImageBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5AEDA1185993A9008C463C /* ProcessImageBuffer.m */; };
+		DD5AEDAE18599C31008C463C /* ProcessImageBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5AEDA618599C31008C463C /* ProcessImageBuffer.m */; };
+		DD5AEDAF18599C31008C463C /* TrackingRGBACamera.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5AEDA918599C31008C463C /* TrackingRGBACamera.m */; };
+		DD5AEDB018599C31008C463C /* TrackingRGBACameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5AEDAD18599C31008C463C /* TrackingRGBACameraViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,16 +60,16 @@
 		9ACDC8031858970A0007F960 /* TrackingRGBACameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackingRGBACameraTests.m; sourceTree = "<group>"; };
 		9ACDC80E185897740007F960 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9ACDC80F185897740007F960 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9ACDC812185897A80007F960 /* TrackingRGBACamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrackingRGBACamera.h; path = TrackingRGBACamera/TrackingRGBACamera.h; sourceTree = SOURCE_ROOT; };
-		9ACDC813185897A80007F960 /* TrackingRGBACamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrackingRGBACamera.m; path = TrackingRGBACamera/TrackingRGBACamera.m; sourceTree = SOURCE_ROOT; };
 		9ACDC815185897CF0007F960 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		9ACDC817185897D70007F960 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9ACDC8191858980B0007F960 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		9ACDC81B1858983F0007F960 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		9ACDC81D1858AC730007F960 /* TrackingRGBACameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingRGBACameraViewController.h; sourceTree = "<group>"; };
-		9ACDC81E1858AC730007F960 /* TrackingRGBACameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingRGBACameraViewController.m; sourceTree = "<group>"; };
-		DD5AEDA0185993A9008C463C /* ProcessImageBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessImageBuffer.h; sourceTree = "<group>"; };
-		DD5AEDA1185993A9008C463C /* ProcessImageBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessImageBuffer.m; sourceTree = "<group>"; };
+		DD5AEDA518599C31008C463C /* ProcessImageBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessImageBuffer.h; sourceTree = "<group>"; };
+		DD5AEDA618599C31008C463C /* ProcessImageBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessImageBuffer.m; sourceTree = "<group>"; };
+		DD5AEDA818599C31008C463C /* TrackingRGBACamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingRGBACamera.h; sourceTree = "<group>"; };
+		DD5AEDA918599C31008C463C /* TrackingRGBACamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingRGBACamera.m; sourceTree = "<group>"; };
+		DD5AEDAC18599C31008C463C /* TrackingRGBACameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingRGBACameraViewController.h; sourceTree = "<group>"; };
+		DD5AEDAD18599C31008C463C /* TrackingRGBACameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingRGBACameraViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,12 +137,8 @@
 		9ACDC7DE185897090007F960 /* TrackingRGBACamera */ = {
 			isa = PBXGroup;
 			children = (
-				9ACDC812185897A80007F960 /* TrackingRGBACamera.h */,
-				9ACDC813185897A80007F960 /* TrackingRGBACamera.m */,
-				9ACDC81D1858AC730007F960 /* TrackingRGBACameraViewController.h */,
-				9ACDC81E1858AC730007F960 /* TrackingRGBACameraViewController.m */,
-				DD5AEDA0185993A9008C463C /* ProcessImageBuffer.h */,
-				DD5AEDA1185993A9008C463C /* ProcessImageBuffer.m */,
+				DD5AEDA318599C31008C463C /* Class */,
+				DD5AEDAA18599C31008C463C /* Controllers */,
 				9ACDC80D185897740007F960 /* AppDelegate */,
 				9ACDC810185897740007F960 /* Controllers */,
 				9ACDC7DF1858970A0007F960 /* Supporting Files */,
@@ -197,6 +193,50 @@
 			children = (
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DD5AEDA318599C31008C463C /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				DD5AEDA418599C31008C463C /* ProcessImageBuffer */,
+				DD5AEDA718599C31008C463C /* TrackingRGBACamera */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		DD5AEDA418599C31008C463C /* ProcessImageBuffer */ = {
+			isa = PBXGroup;
+			children = (
+				DD5AEDA518599C31008C463C /* ProcessImageBuffer.h */,
+				DD5AEDA618599C31008C463C /* ProcessImageBuffer.m */,
+			);
+			path = ProcessImageBuffer;
+			sourceTree = "<group>";
+		};
+		DD5AEDA718599C31008C463C /* TrackingRGBACamera */ = {
+			isa = PBXGroup;
+			children = (
+				DD5AEDA818599C31008C463C /* TrackingRGBACamera.h */,
+				DD5AEDA918599C31008C463C /* TrackingRGBACamera.m */,
+			);
+			path = TrackingRGBACamera;
+			sourceTree = "<group>";
+		};
+		DD5AEDAA18599C31008C463C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD5AEDAB18599C31008C463C /* TrackingRGBACameraViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DD5AEDAB18599C31008C463C /* TrackingRGBACameraViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DD5AEDAC18599C31008C463C /* TrackingRGBACameraViewController.h */,
+				DD5AEDAD18599C31008C463C /* TrackingRGBACameraViewController.m */,
+			);
+			path = TrackingRGBACameraViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,11 +348,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD5AEDA2185993A9008C463C /* ProcessImageBuffer.m in Sources */,
+				DD5AEDAE18599C31008C463C /* ProcessImageBuffer.m in Sources */,
 				9ACDC7E51858970A0007F960 /* main.m in Sources */,
+				DD5AEDB018599C31008C463C /* TrackingRGBACameraViewController.m in Sources */,
 				9ACDC811185897740007F960 /* AppDelegate.m in Sources */,
-				9ACDC814185897A80007F960 /* TrackingRGBACamera.m in Sources */,
-				9ACDC81F1858AC730007F960 /* TrackingRGBACameraViewController.m in Sources */,
+				DD5AEDAF18599C31008C463C /* TrackingRGBACamera.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

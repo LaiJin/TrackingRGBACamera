@@ -67,7 +67,8 @@
     
 	if (shouldGetTouchPointRGBA){
         
-        NSArray *pointRGBA = [processImageBuffer getTouchPointRGBAByImageBuffer:imageBuffer theTouchPoint:currentTouchPoint theTouchView:self.view];
+        NSArray *pointRGBA = [processImageBuffer getTouchPointRGBAByImageBuffer:imageBuffer
+                                                                  theTouchPoint:currentTouchPoint theTouchView:self.view];
         
 		CGFloat red   = [[pointRGBA objectAtIndex:0] floatValue];
 		CGFloat green = [[pointRGBA objectAtIndex:1] floatValue];
