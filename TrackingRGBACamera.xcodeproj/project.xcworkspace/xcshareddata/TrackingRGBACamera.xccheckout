@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F4DFF974-93D3-4B6F-B378-AEDF80002C7D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TrackingRGBACamera</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>64986E5A-7914-492F-9C09-6020CABFB968</key>
+		<string>https://github.com/LaiJin/TrackingRGBACamera.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TrackingRGBACamera.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>64986E5A-7914-492F-9C09-6020CABFB968</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/LaiJin/TrackingRGBACamera.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>64986E5A-7914-492F-9C09-6020CABFB968</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>64986E5A-7914-492F-9C09-6020CABFB968</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TrackingRGBACamera</string>
+		</dict>
+	</array>
+</dict>
+</plist>

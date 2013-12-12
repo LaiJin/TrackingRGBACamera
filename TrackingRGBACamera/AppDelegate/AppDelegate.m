@@ -17,8 +17,8 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
-    TrackingRGBACameraViewController *rootViewController = [[TrackingRGBACameraViewController alloc] init];
-    self.window.rootViewController = rootViewController;
+    TrackingRGBACameraViewController *trackingViewController = [[TrackingRGBACameraViewController alloc] init];
+    self.window.rootViewController = trackingViewController;
     
     [self.window makeKeyAndVisible];
     return YES;

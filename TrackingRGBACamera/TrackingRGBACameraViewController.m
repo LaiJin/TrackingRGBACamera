@@ -17,26 +17,29 @@
 @implementation TrackingRGBACameraViewController
 @synthesize trackingCamera = _trackingCamera;
 
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        
-    }
-    return self;
-}
-
--(void)loadView
-{
-    
-    self.trackingCamera = [[TrackingRGBACamera alloc] init];
-    
-}
+//- (id)init
+//{
+//    self = [super init];
+//    if (self) {
+//        
+//    }
+//    return self;
+//}
+//
+//-(void)loadView
+//{
+//    
+//    
+//    
+//}
 
 - (void)viewDidLoad
 {
     
     [super viewDidLoad];
+    self.trackingCamera = [[TrackingRGBACamera alloc] init];
+    self.trackingCamera.delegate = self;
+    [self.trackingCamera.delegate showVideoPreviewLayer];
 	// Do any additional setup after loading the view.
 }
 
@@ -61,11 +64,11 @@
 -(void)processImageBuffer:(CVImageBufferRef)imageBuffer
 {
     
-    CVPixelBufferLockBaseAddress(imageBuffer, 0);
-	size_t bufferHeight = CVPixelBufferGetHeight(imageBuffer);
-	size_t bufferWidth = CVPixelBufferGetWidth(imageBuffer);
-	
 	if (shouldGetTouchPointRGBA){
+        
+        CVPixelBufferLockBaseAddress(imageBuffer, 0);
+        size_t bufferHeight = CVPixelBufferGetHeight(imageBuffer);
+        size_t bufferWidth = CVPixelBufferGetWidth(imageBuffer);
         
 		int scaledVideoPointX = round((self.view.bounds.size.width - currentTouchPoint.x) * (CGFloat)bufferHeight / self.view.bounds.size.width);
 		int scaledVideoPointY = round(currentTouchPoint.y * (CGFloat)bufferWidth / self.view.bounds.size.height);
