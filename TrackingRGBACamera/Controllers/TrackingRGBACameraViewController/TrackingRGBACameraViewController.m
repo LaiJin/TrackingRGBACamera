@@ -41,7 +41,7 @@
     
     self.trackingCamera.delegate = self;
     [self.trackingCamera startTrackingCamera];
-	// Do any additional setup after loading the view.
+
 }
 
 - (void)didReceiveMemoryWarning

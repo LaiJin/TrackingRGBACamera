@@ -13,6 +13,6 @@
 
 - (NSArray *)getTouchPointRGBAByImageBuffer:(CVImageBufferRef)imageBuffer theTouchPoint:(CGPoint)currentTouchPoint theTouchView:(UIView *)view;
 
-
+- (UIImage *)imageFromImageBufferRef:(CVImageBufferRef)imageBuffer;
 
 @end
