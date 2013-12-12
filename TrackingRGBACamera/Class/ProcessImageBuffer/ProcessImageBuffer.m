@@ -59,7 +59,7 @@
 #pragma mark -
 #pragma mark Private Methods
 
-#pragma mark -
+#pragma mark -calculateTouchPointPixel
 - (uint8_t *)calculateTouchPointPixel:(CVImageBufferRef)imageBuffer touchPonit:(CGPoint)currentTouchPoint touchView:(UIView *)view
 {
     

@@ -456,6 +456,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrackingRGBACamera/TrackingRGBACamera-Prefix.pch";
 				INFOPLIST_FILE = "TrackingRGBACamera/TrackingRGBACamera-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/chenyu/Desktop/TrackingRGBACamera/TrackingRGBACamera/api/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -467,6 +471,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrackingRGBACamera/TrackingRGBACamera-Prefix.pch";
 				INFOPLIST_FILE = "TrackingRGBACamera/TrackingRGBACamera-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/chenyu/Desktop/TrackingRGBACamera/TrackingRGBACamera/api/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

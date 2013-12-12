@@ -56,10 +56,8 @@
 
 -(void)showVideoPreviewLayer
 {
-    
     self.trackingCamera.videoPreviewLayer.frame = self.view.bounds;
     [self.view.layer addSublayer:self.trackingCamera.videoPreviewLayer];
-    
 }
 
 -(void)processImageBuffer:(CVImageBufferRef)imageBuffer
@@ -68,7 +66,8 @@
 	if (shouldGetTouchPointRGBA){
         
         NSArray *pointRGBA = [processImageBuffer getTouchPointRGBAByImageBuffer:imageBuffer
-                                                                  theTouchPoint:currentTouchPoint theTouchView:self.view];
+                                                                  theTouchPoint:currentTouchPoint
+                                                                   theTouchView:self.view];
         
 		CGFloat red   = [[pointRGBA objectAtIndex:0] floatValue];
 		CGFloat green = [[pointRGBA objectAtIndex:1] floatValue];
@@ -79,7 +78,6 @@
 		shouldGetTouchPointRGBA = NO;
         
 	}
-    
 
 }
 
@@ -89,14 +87,14 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    
 	currentTouchPoint = [[touches anyObject] locationInView:self.view];
 	shouldGetTouchPointRGBA = YES;
-    
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
 {
+    currentTouchPoint = [[touches anyObject] locationInView:self.view];
+	shouldGetTouchPointRGBA = YES;
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
