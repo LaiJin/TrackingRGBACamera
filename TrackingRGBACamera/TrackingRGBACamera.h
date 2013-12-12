@@ -18,6 +18,8 @@
 @property (readonly) AVCaptureVideoPreviewLayer *videoPreviewLayer;
 @property (weak, nonatomic) id<TarckingRGBADelegate>delegate;
 
+-(void)startTrackingCamera;
+
 @end
 
 

@@ -30,11 +30,20 @@
     self = [super init];
     if (self) {
         
-        [self setupCaptureSession];
-        
     }
     
     return self;
+}
+
+#pragma mark -
+#pragma Public Method
+
+-(void)startTrackingCamera
+{
+    
+    [self setupCaptureSession];
+    [self.delegate showVideoPreviewLayer];
+    
 }
 
 

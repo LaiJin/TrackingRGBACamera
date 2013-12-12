@@ -7,8 +7,13 @@
 //
 
 #import "TrackingRGBACameraViewController.h"
+#import "ProcessImageBuffer.h"
 
-@interface TrackingRGBACameraViewController ()
+@interface TrackingRGBACameraViewController (){
+    
+    ProcessImageBuffer *processImageBuffer;
+    
+}
 
 @property (strong, nonatomic) TrackingRGBACamera *trackingCamera;
 
@@ -17,29 +22,25 @@
 @implementation TrackingRGBACameraViewController
 @synthesize trackingCamera = _trackingCamera;
 
-//- (id)init
-//{
-//    self = [super init];
-//    if (self) {
-//        
-//    }
-//    return self;
-//}
-//
-//-(void)loadView
-//{
-//    
-//    
-//    
-//}
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        
+        self.trackingCamera = [[TrackingRGBACamera alloc] init];
+        processImageBuffer = [[ProcessImageBuffer alloc] init];
+        
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
     
     [super viewDidLoad];
-    self.trackingCamera = [[TrackingRGBACamera alloc] init];
+    
     self.trackingCamera.delegate = self;
-    [self.trackingCamera.delegate showVideoPreviewLayer];
+    [self.trackingCamera startTrackingCamera];
 	// Do any additional setup after loading the view.
 }
 
@@ -66,21 +67,14 @@
     
 	if (shouldGetTouchPointRGBA){
         
-        CVPixelBufferLockBaseAddress(imageBuffer, 0);
-        size_t bufferHeight = CVPixelBufferGetHeight(imageBuffer);
-        size_t bufferWidth = CVPixelBufferGetWidth(imageBuffer);
+        NSArray *pointRGBA = [processImageBuffer getTouchPointRGBAByImageBuffer:imageBuffer theTouchPoint:currentTouchPoint theTouchView:self.view];
         
-		int scaledVideoPointX = round((self.view.bounds.size.width - currentTouchPoint.x) * (CGFloat)bufferHeight / self.view.bounds.size.width);
-		int scaledVideoPointY = round(currentTouchPoint.y * (CGFloat)bufferWidth / self.view.bounds.size.height);
+		CGFloat red   = [[pointRGBA objectAtIndex:0] floatValue];
+		CGFloat green = [[pointRGBA objectAtIndex:1] floatValue];
+		CGFloat blue  = [[pointRGBA objectAtIndex:2] floatValue];
+        CGFloat alpha = [[pointRGBA objectAtIndex:3] floatValue];
         
-		uint8_t *rowBase = (uint8_t *)CVPixelBufferGetBaseAddress(imageBuffer);
-		size_t bytesPerRow = CVPixelBufferGetBytesPerRow(imageBuffer);
-		uint8_t *pixel = rowBase + (scaledVideoPointX * bytesPerRow) + (scaledVideoPointY * 4);
-		
-		CGFloat red   = (float)pixel[2];
-		CGFloat green = (float)pixel[1];
-		CGFloat blue  = (float)pixel[0];
-        NSLog(@"%f, %f, %f", red, green, blue);
+        NSLog(@"%f, %f, %f, %f", red, green, blue, alpha);
 		shouldGetTouchPointRGBA = NO;
         
 	}

@@ -27,6 +27,7 @@
 		9ACDC81A1858980C0007F960 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACDC8191858980B0007F960 /* CoreVideo.framework */; };
 		9ACDC81C1858983F0007F960 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACDC81B1858983F0007F960 /* QuartzCore.framework */; };
 		9ACDC81F1858AC730007F960 /* TrackingRGBACameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACDC81E1858AC730007F960 /* TrackingRGBACameraViewController.m */; };
+		DD5AEDA2185993A9008C463C /* ProcessImageBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5AEDA1185993A9008C463C /* ProcessImageBuffer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		9ACDC81B1858983F0007F960 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9ACDC81D1858AC730007F960 /* TrackingRGBACameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingRGBACameraViewController.h; sourceTree = "<group>"; };
 		9ACDC81E1858AC730007F960 /* TrackingRGBACameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingRGBACameraViewController.m; sourceTree = "<group>"; };
+		DD5AEDA0185993A9008C463C /* ProcessImageBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessImageBuffer.h; sourceTree = "<group>"; };
+		DD5AEDA1185993A9008C463C /* ProcessImageBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessImageBuffer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +141,8 @@
 				9ACDC813185897A80007F960 /* TrackingRGBACamera.m */,
 				9ACDC81D1858AC730007F960 /* TrackingRGBACameraViewController.h */,
 				9ACDC81E1858AC730007F960 /* TrackingRGBACameraViewController.m */,
+				DD5AEDA0185993A9008C463C /* ProcessImageBuffer.h */,
+				DD5AEDA1185993A9008C463C /* ProcessImageBuffer.m */,
 				9ACDC80D185897740007F960 /* AppDelegate */,
 				9ACDC810185897740007F960 /* Controllers */,
 				9ACDC7DF1858970A0007F960 /* Supporting Files */,
@@ -303,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD5AEDA2185993A9008C463C /* ProcessImageBuffer.m in Sources */,
 				9ACDC7E51858970A0007F960 /* main.m in Sources */,
 				9ACDC811185897740007F960 /* AppDelegate.m in Sources */,
 				9ACDC814185897A80007F960 /* TrackingRGBACamera.m in Sources */,
@@ -479,6 +485,7 @@
 				9ACDC8091858970A0007F960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9ACDC80A1858970A0007F960 /* Build configuration list for PBXNativeTarget "TrackingRGBACameraTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +494,7 @@
 				9ACDC80C1858970A0007F960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
