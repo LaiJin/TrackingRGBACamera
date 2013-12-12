@@ -26,8 +26,8 @@
 		9ACDC81A1858980C0007F960 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACDC8191858980B0007F960 /* CoreVideo.framework */; };
 		9ACDC81C1858983F0007F960 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACDC81B1858983F0007F960 /* QuartzCore.framework */; };
 		DD5AEDAE18599C31008C463C /* ProcessImageBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5AEDA618599C31008C463C /* ProcessImageBuffer.m */; };
-		DD5AEDAF18599C31008C463C /* TrackingRGBACamera.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5AEDA918599C31008C463C /* TrackingRGBACamera.m */; };
 		DD5AEDB018599C31008C463C /* TrackingRGBACameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5AEDAD18599C31008C463C /* TrackingRGBACameraViewController.m */; };
+		DD5AEDB818599DD1008C463C /* TrackingCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5AEDB718599DD1008C463C /* TrackingCamera.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,10 +66,10 @@
 		9ACDC81B1858983F0007F960 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DD5AEDA518599C31008C463C /* ProcessImageBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessImageBuffer.h; sourceTree = "<group>"; };
 		DD5AEDA618599C31008C463C /* ProcessImageBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessImageBuffer.m; sourceTree = "<group>"; };
-		DD5AEDA818599C31008C463C /* TrackingRGBACamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingRGBACamera.h; sourceTree = "<group>"; };
-		DD5AEDA918599C31008C463C /* TrackingRGBACamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingRGBACamera.m; sourceTree = "<group>"; };
 		DD5AEDAC18599C31008C463C /* TrackingRGBACameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingRGBACameraViewController.h; sourceTree = "<group>"; };
 		DD5AEDAD18599C31008C463C /* TrackingRGBACameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingRGBACameraViewController.m; sourceTree = "<group>"; };
+		DD5AEDB618599DD1008C463C /* TrackingCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingCamera.h; sourceTree = "<group>"; };
+		DD5AEDB718599DD1008C463C /* TrackingCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingCamera.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,8 +198,8 @@
 		DD5AEDA318599C31008C463C /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				DD5AEDB518599DD1008C463C /* TrackingCamera */,
 				DD5AEDA418599C31008C463C /* ProcessImageBuffer */,
-				DD5AEDA718599C31008C463C /* TrackingRGBACamera */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -211,15 +211,6 @@
 				DD5AEDA618599C31008C463C /* ProcessImageBuffer.m */,
 			);
 			path = ProcessImageBuffer;
-			sourceTree = "<group>";
-		};
-		DD5AEDA718599C31008C463C /* TrackingRGBACamera */ = {
-			isa = PBXGroup;
-			children = (
-				DD5AEDA818599C31008C463C /* TrackingRGBACamera.h */,
-				DD5AEDA918599C31008C463C /* TrackingRGBACamera.m */,
-			);
-			path = TrackingRGBACamera;
 			sourceTree = "<group>";
 		};
 		DD5AEDAA18599C31008C463C /* Controllers */ = {
@@ -237,6 +228,15 @@
 				DD5AEDAD18599C31008C463C /* TrackingRGBACameraViewController.m */,
 			);
 			path = TrackingRGBACameraViewController;
+			sourceTree = "<group>";
+		};
+		DD5AEDB518599DD1008C463C /* TrackingCamera */ = {
+			isa = PBXGroup;
+			children = (
+				DD5AEDB618599DD1008C463C /* TrackingCamera.h */,
+				DD5AEDB718599DD1008C463C /* TrackingCamera.m */,
+			);
+			path = TrackingCamera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,11 +348,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD5AEDB818599DD1008C463C /* TrackingCamera.m in Sources */,
 				DD5AEDAE18599C31008C463C /* ProcessImageBuffer.m in Sources */,
 				9ACDC7E51858970A0007F960 /* main.m in Sources */,
 				DD5AEDB018599C31008C463C /* TrackingRGBACameraViewController.m in Sources */,
 				9ACDC811185897740007F960 /* AppDelegate.m in Sources */,
-				DD5AEDAF18599C31008C463C /* TrackingRGBACamera.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
