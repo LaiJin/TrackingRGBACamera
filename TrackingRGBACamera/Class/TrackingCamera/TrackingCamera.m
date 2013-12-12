@@ -6,9 +6,9 @@
 //  Copyright (c) 2013年 lunajin. All rights reserved.
 //
 
-#import "TrackingRGBACamera.h"
+#import "TrackingCamera.h"
 
-@interface TrackingRGBACamera () <AVCaptureVideoDataOutputSampleBufferDelegate>{
+@interface TrackingCamera () <AVCaptureVideoDataOutputSampleBufferDelegate>{
     
 	AVCaptureSession *captureSession;
 	AVCaptureDeviceInput *videoInput;
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation TrackingRGBACamera
+@implementation TrackingCamera
 @synthesize delegate = _delegate;
 @synthesize videoPreviewLayer = _videoPreviewLayer;
 

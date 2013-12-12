@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TrackingRGBACamera.h"
+#import "TrackingCamera.h"
 
-@interface TrackingRGBACameraViewController : UIViewController<TarckingRGBADelegate>{
+@interface TrackingRGBACameraViewController : UIViewController<TarckingDelegate>{
     
     BOOL shouldGetTouchPointRGBA;
 	CGPoint currentTouchPoint;

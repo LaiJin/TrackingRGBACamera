@@ -15,7 +15,7 @@
     
 }
 
-@property (strong, nonatomic) TrackingRGBACamera *trackingCamera;
+@property (strong, nonatomic) TrackingCamera *trackingCamera;
 
 @end
 
@@ -27,7 +27,7 @@
     self = [super init];
     if (self) {
         
-        self.trackingCamera = [[TrackingRGBACamera alloc] init];
+        self.trackingCamera = [[TrackingCamera alloc] init];
         processImageBuffer = [[ProcessImageBuffer alloc] init];
         
     }

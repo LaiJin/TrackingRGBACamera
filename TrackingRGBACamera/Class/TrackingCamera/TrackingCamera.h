@@ -10,20 +10,20 @@
 #import <AVFoundation/AVFoundation.h>
 #import <CoreMedia/CoreMedia.h>
 
-@protocol TarckingRGBADelegate;
+@protocol TarckingDelegate;
 
-@interface TrackingRGBACamera : NSObject
+@interface TrackingCamera : NSObject
 
 
 @property (readonly) AVCaptureVideoPreviewLayer *videoPreviewLayer;
-@property (weak, nonatomic) id<TarckingRGBADelegate>delegate;
+@property (weak, nonatomic) id<TarckingDelegate>delegate;
 
 -(void)startTrackingCamera;
 
 @end
 
 
-@protocol TarckingRGBADelegate <NSObject>
+@protocol TarckingDelegate <NSObject>
 
 - (void)showVideoPreviewLayer;
 - (void)processImageBuffer:(CVImageBufferRef)imageBuffer;
