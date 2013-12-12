@@ -80,7 +80,6 @@
         
 	}
     
-	CVPixelBufferUnlockBaseAddress(imageBuffer, 0);
 
 }
 

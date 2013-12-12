@@ -19,15 +19,7 @@
 {
 
     CVPixelBufferLockBaseAddress(imageBuffer, 0);
-    uint8_t *rowBase = (uint8_t *)CVPixelBufferGetBaseAddress(imageBuffer);
-    size_t bytesPerRow = CVPixelBufferGetBytesPerRow(imageBuffer);
-    size_t bufferHeight = CVPixelBufferGetHeight(imageBuffer);
-    size_t bufferWidth = CVPixelBufferGetWidth(imageBuffer);
-    
-    int scaledVideoPointX = round((view.bounds.size.width - currentTouchPoint.x) * (CGFloat)bufferHeight / view.bounds.size.width);
-    int scaledVideoPointY = round(currentTouchPoint.y * (CGFloat)bufferWidth / view.bounds.size.height);
-    uint8_t *pixel = rowBase + (scaledVideoPointX * bytesPerRow) + (scaledVideoPointY * 4);
-    
+    uint8_t *pixel = [self calculateTouchPointPixel:imageBuffer touchPonit:currentTouchPoint touchView:view];
     NSNumber *alpha = [NSNumber numberWithFloat:(float)pixel[3]];
     NSNumber *red   = [NSNumber numberWithFloat:(float)pixel[2]];
     NSNumber *green = [NSNumber numberWithFloat:(float)pixel[1]];
@@ -63,5 +55,25 @@
     return image;
 
 }
+
+#pragma mark -
+#pragma mark Private Methods
+
+#pragma mark -
+- (uint8_t *)calculateTouchPointPixel:(CVImageBufferRef)imageBuffer touchPonit:(CGPoint)currentTouchPoint touchView:(UIView *)view
+{
+    
+    uint8_t *rowBase = (uint8_t *)CVPixelBufferGetBaseAddress(imageBuffer);
+    size_t bytesPerRow = CVPixelBufferGetBytesPerRow(imageBuffer);
+    size_t bufferHeight = CVPixelBufferGetHeight(imageBuffer);
+    size_t bufferWidth = CVPixelBufferGetWidth(imageBuffer);
+    int scaledVideoPointX = round((view.bounds.size.width - currentTouchPoint.x) * (CGFloat)bufferHeight / view.bounds.size.width);
+    int scaledVideoPointY = round(currentTouchPoint.y * (CGFloat)bufferWidth / view.bounds.size.height);
+    uint8_t *pixel = rowBase + (scaledVideoPointX * bytesPerRow) + (scaledVideoPointY * 4);
+    
+    return pixel;
+    
+}
+
 
 @end
