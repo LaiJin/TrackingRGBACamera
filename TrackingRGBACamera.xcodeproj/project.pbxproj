@@ -140,7 +140,6 @@
 				DD5AEDA318599C31008C463C /* Class */,
 				DD5AEDAA18599C31008C463C /* Controllers */,
 				9ACDC80D185897740007F960 /* AppDelegate */,
-				9ACDC810185897740007F960 /* Controllers */,
 				9ACDC7DF1858970A0007F960 /* Supporting Files */,
 			);
 			path = TrackingRGBACamera;
@@ -186,13 +185,6 @@
 				9ACDC80F185897740007F960 /* AppDelegate.m */,
 			);
 			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		9ACDC810185897740007F960 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		DD5AEDA318599C31008C463C /* Class */ = {
